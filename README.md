@@ -1,73 +1,220 @@
-# Welcome to your Lovable project
+# 🌍 GreenCode AI  
+## ML-Based Digital Carbon Emission Predictor & Optimization Platform
 
-## Project info
+---
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 📌 Overview
 
-## How can I edit this code?
+GreenCode AI is an AI-driven sustainability intelligence platform that predicts and analyzes the carbon emissions of web applications based on architectural and usage metrics.
 
-There are several ways of editing your application.
+The platform estimates digital carbon impact, forecasts future trends, identifies key contributing factors, and enables interactive optimization planning to reduce environmental footprint.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 🚨 Problem Statement
 
-Changes made via Lovable will be committed automatically to this repo.
+As digital infrastructure grows rapidly, web applications consume increasing energy through data transfer, server load, and resource-heavy architecture.
 
-**Use your preferred IDE**
+However, most developers and organizations:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Do not measure digital carbon emissions  
+- Lack visibility into performance-related environmental impact  
+- Have no structured optimization planning tools  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+GreenCode AI addresses this gap by providing intelligent carbon prediction and sustainability insights.
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🎯 Objectives
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- Predict carbon emissions using Machine Learning  
+- Forecast future emission trends  
+- Identify major contributing factors  
+- Provide actionable optimization suggestions  
+- Enable interactive sustainability simulation  
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## 🧠 Machine Learning Approach
+
+### Model Used:
+RandomForestRegressor (Supervised Learning)
+
+### Input Features:
+- Page Size (MB)
+- API Calls
+- Number of Images
+- Monthly Users
+- Session Time (minutes)
+- Server Response Time (ms)
+
+### Model Outputs:
+- Predicted Carbon Emission (kg/month)
+- Energy Usage (kWh)
+- Green Score (0–100)
+- Sustainability Rating
+- 6-Month Emission Forecast
+- Feature Importance Analysis
+
+### Why Random Forest?
+- Handles nonlinear relationships
+- Provides strong predictive performance
+- Offers feature importance for explainability
+- Robust and reliable for structured data
+
+---
+
+## 🔮 Key Features
+
+### ✅ Carbon Emission Prediction
+Predicts monthly CO₂ emissions based on web application metrics.
+
+### ✅ 6-Month Forecasting
+Simulates emission growth trends over time.
+
+### ✅ Feature Importance Analysis
+Identifies which architectural factors contribute most to emissions.
+
+### ✅ Optimization Suggestions
+Provides actionable recommendations to reduce digital carbon footprint.
+
+### ✅ Optimization Simulation
+Interactive comparison of current vs optimized metrics.
+
+### ✅ Sustainability Benchmarking
+Compares results against predefined efficiency thresholds.
+
+---
+
+## 🏗 Tech Stack
+
+### Frontend
+- React (Vite + TypeScript)
+- Axios
+- Recharts
+- CSS
+
+### Backend
+- Python
+- FastAPI
+- scikit-learn
+- pandas
+- numpy
+- joblib
+
+---
+
+## 📊 Example Usage
+
+### Input:
+- Page Size: 2.5 MB  
+- API Calls: 50  
+- Images: 15  
+- Monthly Users: 10,000  
+- Session Time: 5 minutes  
+- Server Response Time: 200 ms  
+
+### Output:
+- 35.63 kg CO₂ per month  
+- 14.96 kWh energy usage  
+- Green Score: 29/100  
+- Sustainability Rating: Poor  
+- Feature Importance breakdown  
+- 6-Month Forecast graph  
+- Optimization recommendations  
+
+---
+
+## 📁 Project Structure
+
+carbon-score-analyzer/
+
+├── public/
+
+│ ├── greencode_ai_favicon.ico
+
+│ └── robots.txt
+
+├── src/
+
+│ ├── components/
+
+│ ├── pages/
+
+│ ├── hooks/
+
+│ ├── lib/
+
+│ ├── App.tsx
+
+│ ├── main.tsx
+
+│ └── index.css
+
+├── backend/
+
+│ ├── main.py
+
+│ ├── model_training.py
+
+│ └── carbon_model.pkl
+
+└── README.md
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+git clone <repository-url>
+cd carbon-score-analyzer
+
+
+### 2️⃣ Frontend Setup
+
+npm install
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+Frontend runs on:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+http://localhost:5173
 
-**Use GitHub Codespaces**
+### 3️⃣ Backend Setup
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
 
-## What technologies are used for this project?
+Backend runs on:
 
-This project is built with:
+http://localhost:8000
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## 📈 Future Enhancements
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+- Real-time carbon tracking integration  
+- Multi-project portfolio comparison  
+- CI/CD sustainability checks  
+- Enterprise ESG reporting module  
+- Cloud deployment carbon analytics  
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## 🌱 Impact
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+GreenCode AI enables:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- Developers to build environmentally efficient applications  
+- Organizations to track digital sustainability  
+- Data-driven climate-conscious decisions  
+- Reduction of digital carbon footprint  
+
+---
+
+## 👩‍💻 Author
+
+- Monigasri M 
+
+- Jayamuguntha P
