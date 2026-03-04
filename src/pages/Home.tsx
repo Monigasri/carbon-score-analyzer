@@ -10,10 +10,10 @@ const FEATURES = [
 ];
 
 const STATS = [
-  { value: "2.4M+", label: "Predictions Made" },
-  { value: "12K+", label: "Teams Using" },
-  { value: "340 tons", label: "CO₂ Saved" },
-  { value: "98%", label: "Accuracy Rate" },
+  { value: "0.91 R²", label: "Model Accuracy Score" },
+  { value: "100+", label: "Training Data Samples" },
+  { value: "98%", label: "Prediction Consistency" },
+  { value: "6-Month", label: "Emission Forecasting" },
 ];
 
 const TESTIMONIALS = [
